@@ -1,0 +1,65 @@
+@charset 'utf-8';
+
+body{font:12px '微软雅黑'; color:#999;}
+/* start t-header */
+.t-header .nav{width:100%;height:32px;background:#F2F2F2;border-bottom:1px solid #ddd;}
+
+.nav-content{width:1230px;height:32px;margin:auto;}
+.nav-content .c-left{line-height:32px;}
+.nav-content .c-left em{font-style:normal;}
+.nav-content a:hover{color:#FF0036;}
+
+.nav-content .c-right{line-height:32px;}
+.nav-content .c-right > li{float:left;padding:0px 10px;}
+.nav-content .c-right > li.menu-item{position:relative;height:31px;border:1px solid transparent;}
+.nav-content .c-right > li.menu-item a:hover{text-decoration:underline;}
+.nav-content .iconfont{font-size:12px;color:#FF0036;}
+
+/*小三角*/
+.nav-content .c-right .menu-item:before{content:'';float:right;width:0;height:0;border:3px solid transparent;border-top-color:#999;border-bottom:none;margin:15px 0px 0px 3px;}
+.nav-content .c-right .menu-item:hover:before{transform:rotate(180deg);transition:0.3s;}
+/*小竖线*/
+.nav-content .c-right .menu-string{padding:0px 3px;font-weight:lighter;}
+/*二维码*/
+.nav-content .c-right .phone-qr{position:relative;}
+.nav-content .c-right .phone-qr .qrcode{display:none;position:absolute;top:28px;left:-50px;opacity:0;z-index:0;width:175px;height:227px;border:1px solid #ddd;}
+.nav-content .c-right .phone-qr .qrcode:before{content:'';position:absolute;top:-7px;left:83px;width:0;height:0;border:7px solid transparent;border-bottom-color:white;border-top:none;}
+.nav-content .c-right .phone-qr:hover .qrcode{display:block;opacity:1;z-index:999;}
+
+/*二级目录*/
+.nav-content .c-right > li.menu-item .sub-menu{display:none;position:absolute;top:32px;left:-1px;opacity:0;z-index:0;width:72px;padding:5px 10px;border:1px solid #ddd;border-top:none;background:#fff;line-height:20px;}
+.nav-content .c-right > li.menu-item:hover{position:relative;background:#fff;border:1px solid #ddd;border-bottom-color:#fff;}
+.nav-content .c-right > li.menu-item:hover .sub-menu{display:block;opacity:1;z-index:999;background:#fff;}
+.nav-content .c-right > li.menu-item:hover > a{color:#FF0036;}
+
+/*收藏夹*/
+.nav-content .c-right > li.menu-item .sub-menu1{width:60px;}
+/*商家支持*/
+.nav-content .c-right > li.menu-item .sub-menu2{width:121px;left:auto;right:-1px;} 
+.nav-content .c-right > li.menu-item .sub-menu2 a{margin-right:25px;}
+.nav-content .c-right > li.menu-item .sub-menu2 ul{margin-bottom:5px;padding-bottom:10px;border-bottom:1px dotted rgb(130,119,119);}
+/*网站导航*/
+.nav-content .c-right > li.menu-item .sub-menu3{width:1200px;left:auto;right:-1px;}
+.nav-content .c-right > li.menu-item .sub-menu3 .sub-menu-web{width:275px;height:200px;margin:30px 0px;padding-left:30px;border-right:1px solid #ddd;}
+.nav-content .c-right > li.menu-item .sub-menu3 .sub-menu-web h3{margin:7px 0px;color:orange;font-weight:lighter;font-size:18px;}
+.nav-content .c-right > li.menu-item .sub-menu3 .sub-menu-web > ul > li{display:inline-block;float:left;width:90px;margin:6px 0px;}
+.nav-content .c-right > li.menu-item .sub-menu3 .sub-menu-web > ul > li a{position:relative;}
+.nav-content .c-right > li.menu-item .sub-menu3 .sub-menu-web > ul > li a:hover{color:orange;}
+
+.nav-content .c-right > li.menu-item .sub-menu3 .sub-menu-Market{width:360px;}
+.nav-content .c-right > li.menu-item .sub-menu3 .sub-menu-Market h3{color:blue;}
+.nav-content .c-right > li.menu-item .sub-menu3 .sub-menu-Market > ul > li a:hover{color:blue;}
+
+.nav-content .c-right > li.menu-item .sub-menu3 .sub-menu-Brand{width:270px;}
+.nav-content .c-right > li.menu-item .sub-menu3 .sub-menu-Brand h3{color:#000;}
+.nav-content .c-right > li.menu-item .sub-menu3 .sub-menu-Brand > ul > li a:hover{color:#000;}
+
+.nav-content .c-right > li.menu-item .sub-menu3 .sub-menu-Help{width:170px;border:none;}
+.nav-content .c-right > li.menu-item .sub-menu3 .sub-menu-Help h3{color:#999;}
+.nav-content .c-right > li.menu-item .sub-menu3 .sub-menu-Help > ul > li a:hover{color:#999;}
+
+.nav-content .c-right > li.menu-item .sub-menu3 .call-word{position:absolute;right:-10px;top:-7px;width:9px;height:11px;}
+.nav-content .c-right > li.menu-item .sub-menu3 .hint-new{background:url('../images/01-top-search/hint.png')no-repeat -37px -11px;} 
+.nav-content .c-right > li.menu-item .sub-menu3 .hint-hot{background:url('../images/01-top-search/hint.png')no-repeat -37px 0px;}
+
+/* t-header end */
